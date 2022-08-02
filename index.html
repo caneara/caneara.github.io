@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title-->
+    <title>
+        Caneara
+    </title>
+
+    <!-- Description-->
+    <meta name="description" content="A software development company.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Caneara">
+    <meta property="og:description" content="A software development company.">
+    <meta property="og:url" content="https://caneara.com">
+    <meta property="og:image" content="https://caneara.com/assets/img/general/card.png">
+    <meta property="og:secure_url" content="https://caneara.com/assets/img/general/card.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Caneara">
+    <meta name="twitter:description" content="A software development company.">
+    <meta name="twitter:image" content="https://caneara.com/assets/img/general/card.png">
+    <meta name="twitter:creator" content="@CanearaHQ">
+    <meta name="twitter:site" content="@CanearaHQ">
+
+    <!-- Favicon -->
+    <link rel="icon"
+          type="image/png"
+          href="assets/img/general/logo.png">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CryptoJS -->
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet"
+          href="assets/css/styles.css" />
+
+    <!-- Script -->
+    <script>
+        function contact()
+        {
+            let target = 'U2FsdGVkX1+0fEaYd51xPylz/i0YX3cAlOLSK7TmMCjiOYURrA38/2XwOUWJdhOW';
+
+            let decoded = CryptoJS.AES.decrypt(target, 'caneara').toString(CryptoJS.enc.Utf8);
+
+            location.href = decoded;
+        }
+    </script>
+
+</head>
+<body style="background: linear-gradient(#00588B, #002A43)"
+      class="flex justify-center items-center min-h-screen font-abeezee relative p-6">
+
+    <!-- Overlay -->
+    <div class="bg-black/25 absolute inset-0 z-1"></div>
+
+    <!-- Content -->
+    <div class="flex flex-col justify-center items-center relative z-2 pt-6 lg:pt-0">
+
+        <!-- Logo -->
+        <img alt="Caneara"
+             class="h-[55px] mb-2"
+             src="assets/img/general/logo.svg" />
+
+        <!-- Header -->
+        <h1 class="font-signika text-[40px] text-white md:-mb-[6px]">
+            Caneara
+        </h1>
+
+        <!-- Description -->
+        <p class="text-[19px] md:text-[21px] text-gray-400/80 text-center mb-12">
+            A software development company
+        </p>
+
+        <!-- Products -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[800px] mb-12">
+
+            <!-- Lumeno -->
+            <div onclick="location.href = 'https://lumeno.dev'"
+                 class="bg-white/5 hover:bg-white/10 rounded-lg cursor-pointer transition-all duration-300 p-10">
+
+                <!-- Branding -->
+                <div class="flex items-center mb-5">
+
+                    <!-- Logo -->
+                    <img alt="Lumeno"
+                         class="h-[30px] mr-3"
+                         src="assets/img/products/lumeno.png" />
+
+                    <!-- Title -->
+                    <h2 class="font-signika text-[20px] text-white">
+                        Lumeno
+                    </h2>
+
+                </div>
+
+                <!-- Summary -->
+                <p class="text-[15px] text-gray-400">
+                    A modern portfolio and recruitment platform for IT professionals
+                </p>
+
+            </div>
+
+            <!-- Tipsea -->
+            <div onclick="location.href = 'https://tipsea.app'"
+                 class="bg-white/5 hover:bg-white/10 rounded-lg cursor-pointer transition-all duration-300 p-10">
+
+                <!-- Branding -->
+                <div class="flex items-center mb-5">
+
+                    <!-- Logo -->
+                    <img alt="Tipsea"
+                         class="h-[30px] mr-3"
+                         src="assets/img/products/tipsea.png" />
+
+                    <!-- Title -->
+                    <h2 class="font-signika text-[20px] text-white">
+                        Tipsea
+                    </h2>
+
+                </div>
+
+                <!-- Summary -->
+                <p class="text-[15px] text-gray-400">
+                    The smart way to write, share and consume the latest code tips
+                </p>
+
+            </div>
+
+            <!-- Varnish -->
+            <div onclick="location.href = 'https://spirit.caneara.com'"
+                 class="bg-white/5 hover:bg-white/10 rounded-lg cursor-pointer transition-all duration-300 p-10">
+
+                <!-- Branding -->
+                <div class="flex items-center mb-5">
+
+                    <!-- Logo -->
+                    <img alt="Varnish"
+                         class="h-[30px] mr-3"
+                         src="assets/img/products/varnish.png" />
+
+                    <!-- Title -->
+                    <h2 class="font-signika text-[20px] text-white">
+                        Varnish
+                    </h2>
+
+                </div>
+
+                <!-- Summary -->
+                <p class="text-[15px] text-gray-400">
+                    An open-source library of UI components built using Vue and Tailwind
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="text-[12px] text-gray-500 text-center">
+
+            <!-- Copyright -->
+            <script>
+                document.write(`
+                    <div>
+                        &copy; ${new Date().getFullYear()} Caneara, all rights reserved
+                    </div>
+                `)
+            </script>
+
+            <!-- Contact -->
+            <a href="javascript:contact()"
+               class="text-sky-500 hover:text-red-400 transition-all duration-300">
+
+                <!-- Text -->
+                Contact
+
+            </a>
+
+            <!-- Separator -->
+            <span class="text-[10px] text-gray-600 mx-1">
+                |
+            </span>
+
+            <!-- Twitter -->
+            <a href="https://twitter.com/@CanearaHQ"
+               class="text-sky-500 hover:text-red-400 transition-all duration-300">
+
+                <!-- Text -->
+                Twitter
+
+            </a>
+
+            <!-- Separator -->
+            <span class="text-[10px] text-gray-600 mx-1">
+                |
+            </span>
+
+            <!-- Twitter -->
+            <a href="legal.txt"
+               class="text-sky-500 hover:text-red-400 transition-all duration-300">
+
+                <!-- Text -->
+                Legal
+
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

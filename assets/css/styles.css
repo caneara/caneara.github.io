@@ -1,0 +1,6 @@
+/* Import Fonts */
+@import url(https://fonts.bunny.net/css?family=abeezee:400|signika:500);
+
+/* Font Classes */
+.font-abeezee { font-family: 'ABeeZee', sans-serif; font-weight: 400 }
+.font-signika { font-family: 'Signika', sans-serif; font-weight: 500 }
