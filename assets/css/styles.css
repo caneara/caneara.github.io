@@ -1,6 +1,7 @@
 /* Import Fonts */
-@import url(https://fonts.bunny.net/css?family=abeezee:400|signika:500);
+@import url(https://fonts.bunny.net/css?family=inter:300,400,600,700|signika:600|Bebas+Neue);
 
 /* Font Classes */
-.font-abeezee { font-family: 'ABeeZee', sans-serif; font-weight: 400 }
-.font-signika { font-family: 'Signika', sans-serif; font-weight: 500 }
+.font-inter { font-family: 'Inter', sans-serif; font-weight: 400 }
+.font-bebas { font-family: 'Bebas Neue', sans-serif }
+.font-signika { font-family: 'Signika', sans-serif }

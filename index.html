@@ -35,8 +35,19 @@
           type="image/png"
           href="assets/img/general/logo.png">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+          integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" />
 
     <!-- CryptoJS -->
     <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.js"></script>
@@ -49,7 +60,7 @@
     <script>
         function contact()
         {
-            let target = 'U2FsdGVkX1+0fEaYd51xPylz/i0YX3cAlOLSK7TmMCjiOYURrA38/2XwOUWJdhOW';
+            let target = 'U2FsdGVkX18B00jTY6Ff9YrjfurN12sTo7szgxQlJWqV57+BDRXxtG4/dYKooyvo';
 
             let decoded = CryptoJS.AES.decrypt(target, 'caneara').toString(CryptoJS.enc.Utf8);
 
@@ -58,165 +69,247 @@
     </script>
 
 </head>
-<body style="background: linear-gradient(#00588B, #002A43)"
-      class="flex justify-center items-center min-h-screen font-abeezee relative p-6">
-
-    <!-- Overlay -->
-    <div class="bg-black/25 absolute inset-0 z-1"></div>
-
-    <!-- Content -->
-    <div class="flex flex-col justify-center items-center relative z-2 pt-6 lg:pt-0">
-
-        <!-- Logo -->
-        <img alt="Caneara"
-             class="h-[55px] mb-4"
-             src="assets/img/general/logo.svg" />
+<body class="bg-gray-100 flex flex-col justify-center items-center min-h-screen font-inter lg:px-[100px]">
+    <div class="bg-white lg:border-l lg:border-r border-gray-300/[.90] w-full max-w-[1100px] flex-1 p-6 lg:p-[100px]">
 
         <!-- Header -->
-        <h1 class="font-signika font-semibold text-[30px] text-white uppercase md:-mb-[6px]">
-            Caneara
+        <div class="flex items-center mb-10">
+
+            <!-- Avatar -->
+            <img alt="Avatar"
+                 src="assets/img/avatar.jpg"
+                 class="h-[90px] rounded-full">
+
+            <!-- Social Media -->
+            <div class="flex gap-x-8 ml-10">
+
+                <!-- Twitter -->
+                <a target="_blank"
+                   title="Twitter"
+                   href="https://twitter.com/mattkingshott">
+
+                    <!-- Icon -->
+                    <i class="fab fa-twitter text-[25px] text-gray-400 dark:text-gray-600 hover:text-sky-600 dark:hover:text-sky-600 cursor-pointer transition duration-300"></i>
+
+                </a>
+
+                <!-- Github -->
+                <a title="Github"
+                   target="_blank"
+                   href="https://github.com/mattkingshott">
+
+                    <!-- Icon -->
+                    <i class="fab fa-github text-[25px] text-gray-400 dark:text-gray-600 hover:text-purple-700 dark:hover:text-purple-500 cursor-pointer transition duration-300"></i>
+
+                </a>
+
+                <!-- LinkedIn -->
+                <a target="_blank"
+                   title="LinkedIn"
+                   href="https://www.linkedin.com/in/mattkingshott/">
+
+                    <!-- Icon -->
+                    <i class="fab fa-linkedin text-[25px] text-gray-400 dark:text-gray-600 hover:text-blue-700 dark:hover:text-blue-500 cursor-pointer transition duration-300"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Header -->
+        <h1 class="font-bold text-[30px] mb-2">
+            Developer, entrepreneur and content creator
         </h1>
 
-        <!-- Description -->
-        <p class="text-[19px] md:text-[21px] text-gray-400/80 text-center -tracking-[.2px] mb-12">
-            A software development company
+        <!-- Summary -->
+        <p class="font-light text-[24px] text-gray-500">
+            Hey there&hellip; I'm Matt Kingshott, a full-stack developer, entrepreneur
+            and content creator. In 2022, I formed Caneara to serve as an umbrella
+            for my closed and open-source projects, as well as my client and consulting work.
+        </p>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-300/[.50] h-[1px] my-16 lg:my-[80px]"></div>
+
+        <!-- Header -->
+        <h2 class="font-bebas text-[27px] text-sky-700 tracking-wide mb-3">
+            Projects
+        </h2>
+
+        <!-- Summary -->
+        <p class="text-[19px] text-gray-600 leading-relaxed mb-10">
+            Over the years, I've built many projects, some of them closed-source, some
+            open-source. Most of them were built using the VILT stack (Vue, Inertia,
+            Laravel & Tailwind). Here are some highlights&hellip;
         </p>
 
         <!-- Products -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[800px] mb-12">
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
 
-            <!-- Lumeno -->
-            <div onclick="location.href = 'https://lumeno.dev'"
-                 class="bg-white/5 hover:bg-white/10 rounded-lg cursor-pointer transition-all duration-300 p-10">
+            <!-- Pionear -->
+            <div onclick="window.open('https://pionear.app')"
+                 class="hover:bg-orange-200/[.10] border border-transparent hover:border-yellow-600/[.50] flex justify-center items-start md:items-center rounded-lg cursor-pointer transition duration-300 px-8 py-6">
 
-                <!-- Branding -->
-                <div class="flex items-center mb-5">
+                <!-- Logo -->
+                <img alt="Pionear"
+                     src="assets/img/pionear.png"
+                     class="w-[30px] md:w-[50px] mt-2 md:mt-0">
 
-                    <!-- Logo -->
-                    <img alt="Lumeno"
-                         class="h-[30px] mr-3"
-                         src="assets/img/products/lumeno.png" />
+                <!-- Details -->
+                <div class="ml-8">
 
-                    <!-- Title -->
-                    <h2 class="font-signika text-[20px] text-white">
-                        Lumeno
-                    </h2>
+                    <!-- Name -->
+                    <h3 class="font-signika font-semibold text-[21px]">
+                        Pionear
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-[17px] text-gray-600 leading-relaxed">
+                        A complete Laravel SaaS starter kit and application generator.
+                    </p>
 
                 </div>
 
-                <!-- Summary -->
-                <p class="text-[15px] text-gray-400">
-                    A modern portfolio and recruitment platform for IT professionals
-                </p>
+            </div>
+
+            <!-- Lumeno -->
+            <div onclick="window.open('https://lumeno.dev')"
+                 class="hover:bg-orange-200/[.10] border border-transparent hover:border-yellow-600/[.50] flex justify-center items-start md:items-center rounded-lg cursor-pointer transition duration-300 px-8 py-6">
+
+                <!-- Logo -->
+                <img alt="Lumeno"
+                     src="assets/img/lumeno.png"
+                     class="w-[30px] md:w-[50px] mt-2 md:mt-0">
+
+                <!-- Details -->
+                <div class="ml-8">
+
+                    <!-- Name -->
+                    <h3 class="font-signika font-semibold text-[21px]">
+                        Lumeno
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-[17px] text-gray-600 leading-relaxed">
+                        A modern portfolio and recruitment platform for IT professionals.
+                    </p>
+
+                </div>
 
             </div>
 
             <!-- TipSea -->
-            <div onclick="location.href = 'https://tipsea.app'"
-                 class="bg-white/5 hover:bg-white/10 rounded-lg cursor-pointer transition-all duration-300 p-10">
+            <div onclick="window.open('https://tipsea.app')"
+                 class="hover:bg-orange-200/[.10] border border-transparent hover:border-yellow-600/[.50] flex justify-center items-start md:items-center rounded-lg cursor-pointer transition duration-300 px-8 py-6">
 
-                <!-- Branding -->
-                <div class="flex items-center mb-5">
+                <!-- Logo -->
+                <img alt="TipSea"
+                     src="assets/img/tipsea.png"
+                     class="w-[25px] md:w-[40px] mt-2 md:mt-0">
 
-                    <!-- Logo -->
-                    <img alt="TipSea"
-                         class="h-[30px] mr-3"
-                         src="assets/img/products/tipsea.png" />
+                <!-- Details -->
+                <div class="ml-9 md:ml-10">
 
-                    <!-- Title -->
-                    <h2 class="font-signika text-[20px] text-white">
+                    <!-- Name -->
+                    <h3 class="font-signika font-semibold text-[21px]">
                         TipSea
-                    </h2>
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-[17px] text-gray-600 leading-relaxed">
+                        The smart way to write, share and discover the latest code tips.
+                    </p>
 
                 </div>
-
-                <!-- Summary -->
-                <p class="text-[15px] text-gray-400">
-                    The smart way to write, share and discover the latest code tips & tricks
-                </p>
 
             </div>
 
             <!-- Varnish -->
-            <div onclick="location.href = 'https://varnish.caneara.com'"
-                 class="bg-white/5 hover:bg-white/10 rounded-lg cursor-pointer transition-all duration-300 p-10">
+            <div onclick="window.open('https://varnish.caneara.com')"
+                 class="hover:bg-orange-200/[.10] border border-transparent hover:border-yellow-600/[.50] flex justify-center items-start md:items-center rounded-lg cursor-pointer transition duration-300 px-8 py-6">
 
-                <!-- Branding -->
-                <div class="flex items-center mb-5">
+                <!-- Logo -->
+                <img alt="Varnish"
+                     src="assets/img/varnish.png"
+                     class="w-[30px] md:w-[50px] mt-2 md:mt-0">
 
-                    <!-- Logo -->
-                    <img alt="Varnish"
-                         class="h-[25px] mr-3"
-                         src="assets/img/products/varnish.png" />
+                <!-- Details -->
+                <div class="ml-8">
 
-                    <!-- Title -->
-                    <h2 class="font-signika text-[20px] text-white">
+                    <!-- Name -->
+                    <h3 class="font-signika font-semibold text-[21px]">
                         Varnish
-                    </h2>
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-[17px] text-gray-600 leading-relaxed">
+                        A free library of UI components built using Vue and Tailwind CSS.
+                    </p>
 
                 </div>
 
-                <!-- Summary -->
-                <p class="text-[15px] text-gray-400">
-                    An open-source library of UI components built using Vue and Tailwind
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-300/[.50] h-[1px] my-16 lg:my-[80px]"></div>
+
+        <!-- Header -->
+        <h2 class="font-bebas text-[27px] text-sky-700 tracking-wide mb-3">
+            Client & Consulting
+        </h2>
+
+        <!-- Summary -->
+        <p class="text-[19px] text-gray-600 leading-relaxed mb-12">
+            I've helped many businesses and individuals with their applications,
+            from design and tech choices, to building and testing features,
+            through to deployment and maintenance on server &amp; serverless
+            platforms. If you are interested in a collaboration, then feel free
+            to get in touch.
+        </p>
+
+        <!-- Contact -->
+        <div onclick="contact()"
+             class="hover:bg-orange-200/[.10] border border-gray-200 hover:border-yellow-600/[.50] flex items-start md:items-center rounded-lg cursor-pointer transition duration-300 max-w-[450px] px-8 py-6 mx-auto">
+
+            <!-- Logo -->
+            <i class="fas fa-envelope text-[40px] text-sky-600"></i>
+
+            <!-- Details -->
+            <div class="ml-7">
+
+                <!-- Name -->
+                <h3 class="font-signika font-semibold text-[21px]">
+                    Send Email
+                </h3>
+
+                <!-- Description -->
+                <p class="text-[17px] text-gray-600 leading-relaxed">
+                    I'll get back to you as soon as possible
                 </p>
 
             </div>
 
         </div>
 
-        <!-- Footer -->
-        <div class="text-[12px] text-gray-500 text-center">
+        <!-- Copyright -->
+        <div class="text-gray-400 text-[12px] text-center mt-20">
 
-            <!-- Copyright -->
+            <!-- Symbol -->
+            &copy;
+
+            <!-- Current Year -->
             <script>
-                document.write(`
-                    <div>
-                        &copy; ${new Date().getFullYear()} Caneara, all rights reserved
-                    </div>
-                `)
+                document.write(new Date().getFullYear());
             </script>
 
-            <!-- Contact -->
-            <a href="javascript:contact()"
-               class="text-sky-500 hover:text-red-400 transition-all duration-300">
-
-                <!-- Text -->
-                Contact
-
-            </a>
-
-            <!-- Separator -->
-            <span class="text-[10px] text-gray-600 mx-1">
-                |
-            </span>
-
-            <!-- Twitter -->
-            <a href="https://twitter.com/@CanearaHQ"
-               class="text-sky-500 hover:text-red-400 transition-all duration-300">
-
-                <!-- Text -->
-                Twitter
-
-            </a>
-
-            <!-- Separator -->
-            <span class="text-[10px] text-gray-600 mx-1">
-                |
-            </span>
-
-            <!-- Twitter -->
-            <a href="legal.txt"
-               class="text-sky-500 hover:text-red-400 transition-all duration-300">
-
-                <!-- Text -->
-                Legal
-
-            </a>
+            <!-- Text -->
+            Caneara. All rights reserved.
 
         </div>
 
     </div>
-
 </body>
 </html>
