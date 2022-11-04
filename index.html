@@ -145,19 +145,19 @@
         </p>
 
         <!-- Products -->
-        <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 gap-4">
 
             <!-- Pionear -->
             <div onclick="window.open('https://pionear.app')"
-                 class="hover:bg-orange-200/[.10] border border-transparent hover:border-yellow-600/[.50] flex justify-center items-start md:items-center rounded-lg cursor-pointer transition duration-300 px-8 py-6">
+                 class="hover:bg-orange-200/[.10] border border-transparent hover:border-yellow-600/[.50] flex items-start md:items-center rounded-lg cursor-pointer transition duration-300 px-8 py-4">
 
                 <!-- Logo -->
-                <img alt="Pionear"
-                     src="assets/img/pionear.png"
-                     class="w-[30px] md:w-[50px] mt-2 md:mt-0">
+                <div class="flex justify-center items-center w-[50px] h-[50px] -mt-1 md:mt-0">
+                    <img src="assets/img/pionear.png">
+                </div>
 
                 <!-- Details -->
-                <div class="ml-8">
+                <div class="ml-6 md:ml-8">
 
                     <!-- Name -->
                     <h3 class="font-signika font-semibold text-[21px]">
@@ -165,34 +165,8 @@
                     </h3>
 
                     <!-- Description -->
-                    <p class="text-[17px] text-gray-600 leading-relaxed">
+                    <p class="text-[17px] text-gray-600 leading-relaxed mb-0">
                         A complete Laravel SaaS starter kit and application generator.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <!-- Lumeno -->
-            <div onclick="window.open('https://lumeno.dev')"
-                 class="hover:bg-orange-200/[.10] border border-transparent hover:border-yellow-600/[.50] flex justify-center items-start md:items-center rounded-lg cursor-pointer transition duration-300 px-8 py-6">
-
-                <!-- Logo -->
-                <img alt="Lumeno"
-                     src="assets/img/lumeno.png"
-                     class="w-[30px] md:w-[50px] mt-2 md:mt-0">
-
-                <!-- Details -->
-                <div class="ml-8">
-
-                    <!-- Name -->
-                    <h3 class="font-signika font-semibold text-[21px]">
-                        Lumeno
-                    </h3>
-
-                    <!-- Description -->
-                    <p class="text-[17px] text-gray-600 leading-relaxed">
-                        A modern portfolio and recruitment platform for IT professionals.
                     </p>
 
                 </div>
@@ -201,15 +175,15 @@
 
             <!-- TipSea -->
             <div onclick="window.open('https://tipsea.app')"
-                 class="hover:bg-orange-200/[.10] border border-transparent hover:border-yellow-600/[.50] flex justify-center items-start md:items-center rounded-lg cursor-pointer transition duration-300 px-8 py-6">
+                 class="hover:bg-orange-200/[.10] border border-transparent hover:border-yellow-600/[.50] flex items-start md:items-center rounded-lg cursor-pointer transition duration-300 px-8 py-4">
 
                 <!-- Logo -->
-                <img alt="TipSea"
-                     src="assets/img/tipsea.png"
-                     class="w-[25px] md:w-[40px] mt-2 md:mt-0">
+                <div class="flex justify-center items-center w-[40px] h-[40px] -mt-1 md:mt-0">
+                    <img src="assets/img/tipsea.png">
+                </div>
 
                 <!-- Details -->
-                <div class="ml-9 md:ml-10">
+                <div class="ml-7 md:ml-10 relative md:left-[2px]">
 
                     <!-- Name -->
                     <h3 class="font-signika font-semibold text-[21px]">
@@ -217,7 +191,7 @@
                     </h3>
 
                     <!-- Description -->
-                    <p class="text-[17px] text-gray-600 leading-relaxed">
+                    <p class="text-[17px] text-gray-600 leading-relaxed mb-0">
                         The smart way to write, share and discover the latest code tips.
                     </p>
 
@@ -227,15 +201,15 @@
 
             <!-- Varnish -->
             <div onclick="window.open('https://varnish.caneara.com')"
-                 class="hover:bg-orange-200/[.10] border border-transparent hover:border-yellow-600/[.50] flex justify-center items-start md:items-center rounded-lg cursor-pointer transition duration-300 px-8 py-6">
+                 class="hover:bg-orange-200/[.10] border border-transparent hover:border-yellow-600/[.50] flex items-start md:items-center rounded-lg cursor-pointer transition duration-300 px-8 py-4">
 
                 <!-- Logo -->
-                <img alt="Varnish"
-                     src="assets/img/varnish.png"
-                     class="w-[30px] md:w-[50px] mt-2 md:mt-0">
+                <div class="flex justify-center items-center w-[50px] h-[50px] -mt-1 md:mt-0">
+                    <img src="assets/img/varnish.png">
+                </div>
 
                 <!-- Details -->
-                <div class="ml-8">
+                <div class="ml-6 md:ml-8">
 
                     <!-- Name -->
                     <h3 class="font-signika font-semibold text-[21px]">
@@ -243,13 +217,34 @@
                     </h3>
 
                     <!-- Description -->
-                    <p class="text-[17px] text-gray-600 leading-relaxed">
+                    <p class="text-[17px] text-gray-600 leading-relaxed mb-0">
                         A free library of UI components built using Vue and Tailwind CSS.
                     </p>
 
                 </div>
 
             </div>
+
+            <!-- Extra -->
+            <p class="text-[19px] text-gray-600 leading-relaxed mt-8 mb-0">
+
+                <!-- Text -->
+                You can also check out my other
+
+                <!-- Text -->
+                <a class="text-sky-600 hover:text-rose-600"
+                   href="https://github.com/orgs/caneara/repositories">
+
+                    <!-- Text -->
+                    open-source projects on Github.
+
+                </a>
+
+                <!-- Text -->
+                They include a JavaScript validation library, database trigger support
+                for Laravel, MySQL fuzzy searching and more&hellip;
+
+            </p>
 
         </div>
 
