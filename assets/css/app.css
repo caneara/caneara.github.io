@@ -1,0 +1,68 @@
+/**
+ * Fonts.
+ *
+ */
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 100 900;
+    font-variant-numeric: proportional-nums;
+    src: url('/fonts/Inter.woff2') format('woff2')
+}
+
+/**
+ * Site Theme.
+ *
+ */
+@layer base
+{
+    /**
+     * Headings.
+     *
+     */
+    h1 { @apply font-bold text-30px text-gray-900 leading-tight tracking-tight mb-8 }
+    h2 { @apply font-bold text-27px text-gray-900 leading-tight tracking-tight mb-7 }
+    h3 { @apply font-bold text-24px text-gray-900 leading-tight tracking-tight mb-5 }
+    h4 { @apply font-semibold text-21px text-gray-900 leading-tight tracking-tight mb-5 }
+    h5 { @apply font-semibold text-19px text-gray-900 leading-tight tracking-tight mb-5 }
+    h6 { @apply font-semibold text-17px text-gray-800 leading-tight tracking-tight mb-5 }
+
+    /**
+     * Content.
+     *
+     */
+    p { @apply text-17px text-gray-600 leading-7 mb-6 }
+    ol { @apply mb-7 }
+    ul { @apply mb-7 }
+    li { @apply text-17px text-gray-600 leading-normal ml-10 mb-2 }
+    ul li { @apply list-disc }
+    ol li { @apply list-decimal }
+    a { @apply text-17px text-sky-600 hover:text-rose-700 no-underline transition duration-300 }
+
+    /**
+     * Code.
+     *
+     */
+    pre { @apply bg-gray-100/50 border border-gray-200 rounded-md overflow-auto p-6 my-8 }
+    p code { @apply bg-gray-100 text-16px text-gray-900 rounded px-6px }
+    li code { @apply bg-gray-100 text-16px text-gray-900 rounded px-6px }
+}
+
+/**
+ * Tailwind CSS.
+ *
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Fixes.
+ *
+ */
+.markdown h3 a { @apply text-24px text-gray-900 }
+.markdown hr { @apply mx-30 my-16 }
+.markdown pre code .line { @apply pb-10px last-of-type:pb-0 }
+.markdown .meta { @apply text-14px text-gray-400 block -mt-8 }
+.markdown blockquote { @apply bg-orange-100 border-l-4 border-orange-600/30 rounded-r-md p-6 }
+.markdown blockquote p { @apply mb-0 }
