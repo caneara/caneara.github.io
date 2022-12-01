@@ -71,6 +71,17 @@
     export default
     {
         /**
+         * Execute actions when the component is created.
+         *
+         */
+        created()
+        {
+            useHead({ titleTemplate : (title) =>
+                title && title !== 'Caneara' ? `Caneara - ${title}` : 'Caneara'
+            });
+        },
+
+        /**
          * Define the supporting methods.
          *
          */

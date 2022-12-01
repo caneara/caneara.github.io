@@ -23,7 +23,7 @@
 
             <!-- Heading -->
             <h4 class="mb-0">
-                {{ article.title }}
+                {{ article.title.split(' - ')[1] }}
             </h4>
 
             <!-- Date -->
@@ -41,3 +41,17 @@
     </ContentList>
 
 </template>
+
+<script>
+    export default
+    {
+        /**
+         * Execute actions when the component is created.
+         *
+         */
+        created()
+        {
+            useHead({ title : 'Articles' });
+        }
+    }
+</script>

@@ -180,3 +180,17 @@
     </a>
 
 </template>
+
+<script>
+    export default
+    {
+        /**
+         * Execute actions when the component is created.
+         *
+         */
+        created()
+        {
+            useHead({ title : 'Projects' });
+        }
+    }
+</script>
