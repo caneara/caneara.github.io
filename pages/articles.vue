@@ -6,11 +6,14 @@
     </h1>
 
     <!-- Summary -->
-    <p class="mb-16">
+    <p class="mb-11">
         I sometimes scribble down thoughts on a particular topic or coding
         feature that interests me in some way. I also occasionally write
         about useful tips and tricks.
     </p>
+    
+    <!-- Divider -->
+    <hr class="mb-12" />
 
     <!-- List -->
     <ContentList path="/articles" v-slot="{ list }">
